@@ -1,11 +1,14 @@
-import { Routes, Route } from "react-router-dom";
-import NavBar from "./NavBar.jsx";
-import Home from "./Home.jsx";
-import About from "./About.jsx";
-import ProductDetail from "./ProductDetail.jsx";
-import React from "react";
+/* eslint-disable react/prop-types */
+import { Routes, Route } from 'react-router-dom';
+import NavBar from './NavBar.jsx';
+import Home from './Home.jsx';
+import About from './About.jsx';
+import ProductDetail from './ProductDetail.jsx';
+import React from 'react';
 
 const App = (props) => {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const clientSideData = (globalThis.window && window.__INITIAL_DATA__) || null;
   const productId =
     props.productId || (clientSideData && clientSideData.productId) || null;
