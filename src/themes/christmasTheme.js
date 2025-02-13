@@ -13,7 +13,7 @@ const christmasTheme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'cursive',
+    fontFamily: 'sans-serif',
     fontSize: 14,
   },
 });

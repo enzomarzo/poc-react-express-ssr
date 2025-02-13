@@ -62,8 +62,6 @@ const renderReactApp = async (location, productId = null) => {
     </React.StrictMode>
   );
 
-  console.log('aemHomeHtmlWithStyle', aemHomeHtmlWithStyle);
-
   // Extract the CSS
   const emotionChunks = extractCriticalToChunks(reactApp);
   const emotionCss = constructStyleTagsFromChunks(emotionChunks);

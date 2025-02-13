@@ -10,10 +10,10 @@ const ProductDetail = ({ productId, productDetails }) => {
 
   return (
     <Stack>
-      <Typography variant="h1" color={theme.palette.secondary.main}>
+      <Typography variant="h3" color={theme.palette.secondary.main}>
         Product ID: {productId}
       </Typography>
-      <h1>Product ID: {productId}</h1>
+      <h3>Product ID: {productId}</h3>
 
       <Typography variant="body1" color={theme.palette.primary.main}>
         Product Name: {title}

@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <section>
-      <h1>About (base html)</h1>
+      <h3>About (base html)</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

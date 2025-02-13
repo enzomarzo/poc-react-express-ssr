@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <Stack>
-        <Typography variant="h1" color={theme.palette.secondary.main}>
+        <Typography variant="h3" color={theme.palette.secondary.main}>
           Home
         </Typography>
 
