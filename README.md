@@ -9,8 +9,9 @@ To run this application, ensure you have the following:
 - **AEM Instance Running Locally**: AEM should be running on port 4502.
 - **.npmrc Configuration**: You must have an `.npmrc` file configured to access the Merkle `@arrow-dxp/arrow-design-foundation` package. This library extends Material-UI (MUI) components.
 
-Example of .npmrc file
+### Example of .npmrc file
 
+```plaintext
 @arrow-dxp:registry=https://pkgs.dev.azure.com/arwdevops/digital/_packaging/npm-feed/npm/registry/
 //pkgs.dev.azure.com/arwdevops/digital/_packaging/npm-feed/npm/registry/:username=arwdevops
 //pkgs.dev.azure.com/arwdevops/digital/_packaging/npm-feed/npm/registry/:_password=${ARROW_AUTH_TOKEN}
@@ -20,3 +21,4 @@ Example of .npmrc file
 //pkgs.dev.azure.com/arwdevops/digital/_packaging/npm-feed/npm/:email={email}
 //pkgs.dev.azure.com/arwdevops/digital/_packaging/npm-feed/npm/:always-auth=true
 editor=code
+```
