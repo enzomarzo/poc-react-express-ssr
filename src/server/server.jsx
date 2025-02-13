@@ -43,9 +43,16 @@ const renderReactApp = async (location, productId = null) => {
 
   const aemHomeHtml = await fetchHtml(aemUrl, aemAuth);
 
-  const productDetails = productId
+  let productDetails = productId
     ? await fetchJson(`https://api.escuelajs.co/api/v1/products/${productId}`)
     : null;
+
+  if (productDetails && productDetails.name === "EntityNotFoundError") {
+    const products = await fetchJson("https://api.escuelajs.co/api/v1/products");
+    const randomProductIds = products.slice(0, 10).map((product) => product.id);
+    const randomProductId = randomProductIds[Math.floor(Math.random() * randomProductIds.length)];
+    productDetails = await fetchJson(`https://api.escuelajs.co/api/v1/products/${randomProductId}`);
+  }
 
   const reactApp = ReactDOMServer.renderToString(
     <React.StrictMode>
