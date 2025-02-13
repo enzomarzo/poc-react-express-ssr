@@ -1,0 +1,9 @@
+@arrow-dxp:registry=https://pkgs.dev.azure.com/arwdevops/digital/_packaging/npm-feed/npm/registry/
+//pkgs.dev.azure.com/arwdevops/digital/_packaging/npm-feed/npm/registry/:username=arwdevops
+//pkgs.dev.azure.com/arwdevops/digital/_packaging/npm-feed/npm/registry/:_password=${TOKEN}
+//pkgs.dev.azure.com/arwdevops/digital/_packaging/npm-feed/npm/registry/:email={email}
+//pkgs.dev.azure.com/arwdevops/digital/_packaging/npm-feed/npm/:username=arwdevops
+//pkgs.dev.azure.com/arwdevops/digital/_packaging/npm-feed/npm/:_password=${TOKEN}
+//pkgs.dev.azure.com/arwdevops/digital/_packaging/npm-feed/npm/:email={email}
+//pkgs.dev.azure.com/arwdevops/digital/_packaging/npm-feed/npm/:always-auth=true
+editor=code
