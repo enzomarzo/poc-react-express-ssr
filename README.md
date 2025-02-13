@@ -22,3 +22,35 @@ To run this application, ensure you have the following:
 //pkgs.dev.azure.com/arwdevops/digital/_packaging/npm-feed/npm/:always-auth=true
 editor=code
 ```
+
+## Installation
+
+Clone the repository:
+
+```sh
+git clone <repository-url>
+cd <project-folder>
+```
+
+Install dependencies:
+
+```sh
+npm install
+```
+
+Ensure your `.npmrc` file is correctly set up.
+
+## Running the Application
+
+Start the Express server to serve the React application:
+
+```sh
+npm start
+```
+
+## How It Works
+
+- The Express.js server fetches content from AEM.
+- It replaces a target `<div>` with the React application.
+- The application is server-side rendered (SSR) and sent to the client.
+- React then hydrates the application, enabling client-side interactivity.
